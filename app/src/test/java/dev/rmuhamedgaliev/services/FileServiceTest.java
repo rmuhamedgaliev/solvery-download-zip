@@ -37,7 +37,7 @@ class FileServiceTest {
         }
         file.mkdir();
 
-        var testZipFile = new URL("https://github.com/rmuhamedgaliev/solvery-download-zip/blob/master/app/build.gradle.kts");
+        var testZipFile = new URL("https://github.com/rmuhamedgaliev/solvery-download-zip/blob/master/app/demo.zip?raw=true");
 
         fileService.unzipFile(testZipFile.openStream(), file);
     }
